@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-family: "Work Sans";
+}
+body{
+
+}
+.page{
+    display: grid;
+    justify-content: space-around;
+    width: 755px;
+    height: 459px;
+    margin: 100px auto;
+    padding: 27px 38px 45px 33px;
+    background-color: rgba(255, 176, 132, 1);
+    grid-template-columns: 250px 189px 189px;
+    grid-template-rows: repeat(7,50px);
+    gap: 10px 14px;
+    
+    
+}
+div{
+    border: 0 solid rgba(0,0,0,1);
+    border-radius: 20px;
+    box-shadow: 7px 7px 0 0 black;
+    background-color: white;
+    color: #000;
+}
+.name{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    background-color: white;
+    grid-row: 1/7;
+    padding: 15px 20px 15px 20px;
+}
+figure{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 17px;
+    height: 289px;
+}
+figure p{
+    font-size: 12px;
+}
+img{
+    margin-top: 15px;
+}
+h1{
+
+    margin-top: 0;
+    font-size: 24px;
+}
+figcaption{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    align-items: flex-start;
+    font-size: 12px;  
+}
+figcaption p{
+    font-size: 400;
+}
+strong{
+    font-weight: 600;
+    font-size: 12px;
+}
+.bio{
+    background-color: white;
+    font-size: 14px;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row: 1/3;
+    padding: 15px;
+    padding-left: 25px;
+    text-align: left;
+}
+.goals{
+    grid-row: 3/5;
+    text-align: left;
+    padding: 20px;
+    padding-left: 25px;
+    box-shadow:7px 7px 0 0 #29A71E;
+}
+.goals>h5{
+    color: #29A71E;
+}
+.frustrations{
+    grid-row: 3/6;
+    text-align: left;
+    padding: 15px;
+    padding-left: 25px;
+    box-shadow:7px 7px 0 0 #E13535;
+}
+.frustrations>h5{
+    color: #E13535;
+}
+.DreamCompanies{
+    grid-row: 5/8;
+    text-align: left;
+    padding: 20px;
+    padding-left: 25px;
+    box-shadow:7px 7px 0 0 #3675B0;
+}
+.DreamCompanies>h5{
+    color: #3675B0;
+}
+.personality{
+    grid-row: 6/8;
+    text-align: left;
+    padding: 20px;
+    padding-left: 25px;
+}
+.want{
+    grid-row: 7/8;
+    padding: 10px 25px 15px 25px;
+    font-weight: 700;
+}
+.uls{
+    width: 139px;
+    padding-left: 25px;
+}
+ul{
+    width: 100%;
+
+}
+

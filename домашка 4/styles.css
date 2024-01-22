@@ -1,0 +1,546 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Rosario;
+    font-weight: 700;
+    
+}
+
+.page{
+    display: flex;
+    flex-direction: column;
+    
+    
+    overflow: auto;
+    max-width: 1620px;
+}
+header{
+    width: 100%;
+    z-index: 20;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 108px;
+    background-color: black;
+    font-size: 1.7rem;
+}
+.logo{
+    width: 200px;
+}
+ul{
+    display: flex;
+    flex-direction: row ;
+}
+li{
+    padding-right: 25px;
+    padding-left: 19px;
+    list-style: none;
+}
+li a{
+    text-decoration: none;
+    color:#FFFCFC ;
+}
+main{
+    max-width: 1620px;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+/*------------анимация выезд картинок----*/
+@keyframes slide-in2{
+    0%{
+        transform: translateX(-9999px); 
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+@keyframes slide-in{
+    0%{
+        transform: translateX(-9999px); 
+    }
+    100%{
+        transform: translateX(0px);
+    }
+    }
+
+@keyframes slide-in3 {
+    0%{
+        transform: translateX(9999px); 
+    }
+    100%{
+        transform: translateX(0px);
+    }
+    }
+
+    @keyframes slide-in4 {
+        0%{
+            transform: translateX(9999px); 
+        }
+        100%{
+            transform: translateX(0px);
+        }
+        }
+/*---------------------------------------*/
+img{
+    width: 100%;
+}
+.gallery1{
+    
+    padding: 46px;
+
+    animation-name: slide-in;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    
+    
+}
+.gallery2{
+    
+    display: flex;
+    flex-direction: column;
+    /*--*/
+    animation-name: slide-in2;
+    animation-timing-function: 1s cubic-bezier(.79,.78,.99,.14);
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    
+    
+}
+.gallery2  div{
+    padding: 21px;
+}
+.gallery3  div{
+    padding: 21px;
+}
+.gallery3{
+    
+    display: flex;
+    flex-direction: column;
+    /*---*/
+    animation-name: slide-in3;
+    animation-duration: 1s;
+    animation-timing-function:1s cubic-bezier(.79,.78,.99,.14);
+    animation-fill-mode: forwards;
+   
+    
+}
+.gallery4{
+    
+    padding: 46px;
+
+    animation-name: slide-in4;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    
+}
+/*========*/
+.page2{
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    margin-bottom: 70px;
+    margin-top: 50px;
+}
+/*============анимация кружков===*/
+.left{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: 100vh;
+    animation-name: rotate;
+    animation-timing-function: linear;
+    animation-duration:15s ;
+    animation-iteration-count: infinite;
+    margin-left: -150px;
+    margin-right: -100px;
+    padding: 20px;
+}
+@keyframes rotate{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+.elips1,.elips2,.elips3,.elips4{
+    
+    width: 34%;
+    padding:0 42px 0 42px;
+    animation-name: rotates;
+    animation-timing-function: linear;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+@keyframes rotates{
+    0%{
+        transform: rotate(0deg);
+      }
+      100%{
+        transform: rotate(-360deg);
+      }
+  /*===========================*/    
+}
+figcaption{
+    font-size: 2.3rem;
+    text-align: center;
+}
+.rihgt{
+    height: 100%;
+}
+/*=========*/
+.page3{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100vh;
+    margin-top: 70px;
+}
+.personal{
+   display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-content: stretch;
+    align-items: flex-end;
+    margin-top: 51px;
+}
+.personal figure {
+    display: inline-block;
+    position: relative;
+    width: 22%;
+    height: 100%;
+    margin: 0 20px 0 20px;  
+}
+.personal img{
+    height: 100%;
+    width: 100%;
+}
+.title{
+    font-size: 6rem;
+    text-align: center;
+    letter-spacing: 2px;
+    padding: 31.5px;
+}
+.personal figcaption { 
+    position: absolute;
+    top:70%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    font-family: Volkhov;
+    font-weight: 400;
+    font-size: 48px;
+    border-bottom: 1px solid;
+    border-radius: 0 0 35px 35px;
+    padding-top: 15%;
+    color: white;
+    background-color: rgba(163, 83, 10, 0.7);   
+}
+.personal figure:hover figcaption{
+    transition: all 2s;
+    opacity: 1;
+}
+/*==========*/
+.page4{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 150px;
+}
+.map{
+    margin-top: 40px;
+}
+.formnav{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: flex-start;
+    align-items: stretch;
+
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: flex-end;
+    padding: 30px;
+    width: 936px;
+    height: 400px;
+    text-align: center;
+    margin-left: 10px;
+    box-sizing: content-box;
+}
+.title2{
+    width: 798px;
+    font-size: 4rem;
+    text-align: center;
+    margin: 0 auto;
+}
+form{
+        
+        padding: 20px;
+        background-color: #E5E5E5;
+        display: grid;
+        gap: 20px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 80px 209px;
+        grid-template-areas:
+        "text email"
+        "areas areas";
+}
+    input[type="text"]{
+      grid-area: text;
+    }
+    input[type="email"]{
+      grid-area: email;
+    }
+    textarea{
+       grid-area: areas;
+    }
+
+.text{
+    grid-area: text;
+}
+.email{
+    grid-area: email;
+}
+.area{
+    grid-area: areas;
+}
+input{
+    font-size: 2.2rem;
+    color: rgba(0, 0, 0, 0.50);
+    padding-left: 10px;
+    border-color: white;
+    border-style: hidden;
+}
+textarea{
+    
+    font-size: 2.2rem;
+    padding-left: 10px;
+    color: rgba(0, 0, 0, 0.50);
+    border-color: white;
+}
+.map{
+    width: 40%;
+    padding: 20px;
+}
+footer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 2rem;
+    text-align: center;
+}
+.contakt p{
+    font-size: 1.5rem;
+}
+.adressa p{
+    font-size: 1.5rem;
+}
+footer ul{
+    display: flex;
+    flex-direction: column;
+}
+.socsite  a{
+    font-size: 1.5rem;
+    color: #000;
+}
+.socsite h4{
+    font-size: 1.7rem;
+}
+.socsite li{
+    position: relative;
+    text-align: start;
+    padding-left: 40px;
+}
+.insta {
+    background: url(images/pngwing\ 1.png) no-repeat left center;
+}
+.face {
+    background: url(images/pngwing\ 2.png) no-repeat left center;
+}
+.twit {
+    background: url(images/pngwing\ 3.png) no-repeat left center;
+}
+@media (max-width:992px) {
+       html{
+        font-size: 12px;
+       }
+       main{
+        height: 100%;
+        display: grid;
+        grid-template-areas:
+        "gallery2 gallery3"
+        "gallery1 gallery4";
+       }
+       .gallery2{
+        grid-area: gallery2;
+       }
+       .gallery3{
+        grid-area: gallery3;
+       }
+       .gallery1{
+        grid-area: gallery1;
+        padding: 15px;
+       }
+       .gallery4{
+        grid-area: gallery4;
+        padding: 15px;
+       }
+       .page2{
+        height: 100%;
+        flex-direction: column-reverse;
+        align-items: center;
+       }
+       .rihgt{
+        margin-bottom: 70px;
+       }
+       .title{
+        font-size: 4.5rem;
+       }
+       .page3{
+        margin-top: 0;
+        height: 100%;
+       }
+       .personal figure{
+        width: 40%;
+       }
+       .personal{
+        flex-direction: row;
+        flex-wrap: wrap;
+       }
+       .page4{
+        height: 100%;
+        margin-top: 20px;
+       }
+       .formnav{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       }
+       .form{
+        margin-bottom: 40px;       }
+       form{
+        margin-bottom: 50px;
+       }
+       .title2{
+        padding: 15px 0;
+       }
+       .map{
+        margin-bottom: 50px;
+        width: 100%;
+        text-align: center;
+       }
+       footer{
+        padding: 20px 0;
+       }
+}
+@media (max-width:768px) {
+    header{
+        position: relative;
+    }
+    .nav_menu{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        bottom: -150px;
+        background-color: black;
+        color: white;
+        opacity: 0;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        height: 100%;
+        margin-top: 80px;
+    }
+    .page2{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        height: 100%;
+    }
+    .page3{
+        height: 100%;
+    }
+    .personal{
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .personal figure{
+        width: 60%;
+        padding-top: 40px;
+    }
+    .page4{
+        height: 100%;
+    }
+    .formnav{
+        flex-direction: column;
+        align-items: center;
+    }
+    .form{
+        width: 100%;
+        align-items: center;
+    }
+    form{
+        width: inherit;
+        padding: 10px;
+    }
+    .map{
+        width: 100%;
+        text-align: center;
+    }
+    .title2{
+        font-size: 2.6rem;
+        padding-bottom: 20px;
+        display: inline-block;
+        margin: 0 auto;
+    }
+    footer{
+        margin-top: 50px;
+        margin-bottom: 30px;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+    }
+    footer div{
+        padding-top: 30px;
+    }
+}
